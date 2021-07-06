@@ -1,0 +1,634 @@
+<template>
+  <div class="hello">
+    <nav class="nav-bar">
+      <img class="logo" src="../assets/gradelyLogo.png" alt="Gradely Logo">
+      <div class="links">
+        <a>For Parents</a>
+        <a>For Schools</a>
+        <a class="more">More<span class="material-icons">arrow_drop_down</span></a>
+        <a>Sign Up</a>
+        <button class="loginButton">LOG IN</button>
+      </div>
+
+    </nav>
+    <div class="flowery-background">
+      <div class="rows summer-school">
+      <div class="tagline">
+        <h1 class="tagline-header">Gradely Online<span> Summer</span><br> School</h1>
+        <p class="tagline-paragraph">Help your child develop modern skills by exploring their
+          interests in an engaging project-based virtual class led by
+          dedicated and passionate professionals.</p>
+          <button class="standard-button">Enroll</button>
+      </div>
+      <div class="tagline-image summer-school">
+        <img src="../assets/waving_child.png" alt="Smiling waving child">
+      </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="row-image">
+        <img src="../assets/activechild.png" alt="Keep your child active and watch them grow">
+      </div>
+      <div class="row-article">
+        <h2>Keep your child active and watch them grow.</h2>
+        <p>Replace mindless videogaming and long boring hours with curiosity and creativity this summer.
+          Engage your children's interests with minimal demand of your time.</p>
+          <button class="standard-button">Enroll</button>
+      </div>
+    </div>
+    <div class="how-it-works">
+      <h2>How it works</h2>
+      <div class="icons">
+      <div class="icon-box">
+        <div><img src="../assets/magnifier.png" alt="Find a course"></div>
+        <h3>Find a course</h3>
+        <p>Join up to 3 classes based on your child's age group.</p>
+      </div>
+      <div class="icon-box">
+        <div><img src="../assets/learningGraph.png" alt="Project based lessons"></div>
+        <h3>Project based lessons</h3>
+        <p>Your child watches the weekly
+          video lessons and practices the projects</p>
+      </div>
+      <div class="icon-box">
+        <div><img src="../assets/playVideo.png" alt="Weekly Q and A"></div>
+        <h3>Weekly Q&amp;A</h3>
+        <p>Your child joins the weekly group classes to get support
+          from the facilitators.</p>
+      </div>
+      <div class="icon-box">
+        <div><img src="../assets/createProject.png" alt="Create Project"></div>
+        <h3>Create project</h3>
+        <p>Your child builds their project portfolio.</p>
+      </div>
+    </div>
+  </div>
+    <div class="interest-led-classes">
+      <h2>Interest-led classes your children will love!</h2>
+      <div class="rows around">
+        <div class="summerclass">
+          <img src="../assets/coding.png" alt="">
+          <h4>Coding</h4>
+          <p>During these classes, your child
+            will improve their logical thinking, creative thinking, and <span>...read more</span></p>
+          <button class="standard-button">Enroll</button>
+        </div>
+        <div class="summerclass">
+          <img src="../assets/digitalDesign.png" alt="">
+          <h4>Digital Design</h4>
+          <p>Help your child release their creativity
+            while building valuable communication skill for the  <span>...read more</span></p>
+          <button class="standard-button">Enroll</button>
+        </div>
+        <div class="summerclass">
+          <img src="../assets/fineDining.png" alt="Plate of Food">
+          <h4>Homemaking</h4>
+          <p>This is for the enthusiastic
+            food lovers that would like to engage their 5 senses. At the  <span>...read more</span></p>
+          <button class="standard-button">Enroll</button>
+        </div>
+      </div>
+      <div class="rows around">
+        <div class="summerclass">
+          <img src="../assets/dance.png" alt="Girls dancing ballet in the sunlight">
+          <h4>Dance</h4>
+          <p>Your active and vibrant child will
+            learn fun and enthralling dance styles that will come  <span>...read more</span></p>
+          <button class="standard-button">Enroll</button>
+        </div>
+        <div class="summerclass">
+          <img src="../assets/entrpreneurship.png" alt="">
+          <h4>Entrepreneurship</h4>
+          <p>For the creative problem solvers,
+            this 5 week course will help your child understand  <span>...read more</span></p>
+          <button class="standard-button">Enroll</button>
+        </div>
+        <div class="summerclass">
+          <img src="../assets/videoProduction.png" alt="">
+          <h4>Video production</h4>
+          <p>Your child will learn to produce,
+            create, and edit videos they can use for video adverts  <span>...read more</span></p>
+          <button class="standard-button">Enroll</button>
+        </div>
+      </div>
+    </div>
+      <div class="meet-partners">
+        <h3>Meet our partners</h3>
+        <div class="rows">
+          <div class="partner">
+            <img src="../assets/azubikeAni.png" alt="Azubike Ani">
+            <h5>Azubike Ani</h5>
+            <p>Year 12 / SSS 3 Mathematics. British &amp; Nigerian Curriculum</p>
+          </div>
+          <div class="partner">
+            <img src="../assets/khadijatAkinade.png" alt="Khadijat Akinade">
+            <h5>Khadijat Akinade</h5>
+            <p>Year 7 / JSS 1 Mathematics.<br>British Curriculum</p>
+          </div>
+          <div class="partner">
+            <img src="../assets/imisiayoOloyede.png" alt="Imisiayo Oloyede">
+            <h5>Imisiayo Oloyede</h5>
+            <p>Upper primary school classes.</p>
+          </div>
+          <div class="partner">
+            <img src="../assets/deleGbede.png" alt="Dele Gbede">
+            <h5>Dele Gbede</h5>
+            <p>Year 9/JSS 3 Mathematics.<br>Nigerian Curriculum</p>
+          </div>
+        </div>
+      </div>
+      <div class="rows partner-with-gradely ">
+        <div class="tagline">
+          <h1 class="tagline-header">Partner with Gradely for your summer school</h1>
+          <p class="tagline-paragraph">Bring your summer school to life with Gradely by offering much more without any additional demands on your teachers. Your students’ can explore and
+            engage their interests right at their fingertips from anywhere they are.</p>
+            <button class="standard-button">REQUEST A DEMO</button>
+        </div>
+        <div class="tagline-images">
+          <img src="../assets/sunset.png" alt="Four people jumping in the sunset">
+        </div>
+      </div>
+      <div class="curriculum">
+
+          <h2>Get quality tutors
+            at the best price and at the convenience of your room.</h2>
+            <button>NIGERIAN CURRICULUM</button>
+            <button>BRITISH CURRICULUM</button>
+            <!-- MIGHT NEED SLIDER -->
+            <div class="classes">
+            <div class="general-class">
+              <h3>General classes</h3>
+              <p><span class="material-icons-outlined">done</span>Access
+                to video lessons for 3 skills.</p>
+              <p><span class="material-icons-outlined">done</span>Join
+                2 live group tutoring sessions per week.</p>
+              <p><span class="material-icons-outlined">close</span>Support with
+                building project portfolio</p>
+              <p><span class="material-icons-outlined">close</span>Flexible
+                learning schedules</p>
+              <div class="offer">
+                <h2>5000<span> per month</span></h2>
+                <button class="white-button">ENROLL</button>
+              </div>
+            </div>
+            <div class="personalized-class">
+              <h3>Personalized Classes</h3>
+              <p><span class="material-icons-outlined">done</span>Access
+                to video lessons for 3 skills.</p>
+              <p><span class="material-icons-outlined">done</span>Join
+                2 live group tutoring sessions per week.</p>
+              <p><span class="material-icons-outlined">done</span>Support
+                with building project portfolio</p>
+              <p><span class="material-icons-outlined">done</span>
+                Flexible learning schedules</p>
+
+              <div class="offer">
+                <p>starting from</p>
+                <h2>3000<span>per month</span></h2>
+                <div class="white-button"><img src="../assets/whatsappIcon.svg"><p>BOOK A TUTOR</p></div>
+            </div>
+          </div>
+            </div>
+            <div class="question-box">
+            <h3>Have more Questions?</h3>
+            <button class="white-button"><span><img src="../assets/whatsappIcon.svg" alt="Whatsapp Icon"></span>CONTACT US</button>
+            <div><img src="../assets/wavy-line.png" alt=""></div>
+            <p>Or you can call us on: <span>(+234) 810 059 8268</span></p>
+          </div>
+      </div>
+      <div>
+        <h1>Frequently Asked Questions</h1>
+        <div>
+          <p>What are the technical requirements for Gradely?<span>computer, tablet, or phone with
+            a connection to the Internet.</span></p>
+        </div>
+        <div>
+          <p>What age group is this meant for?<span>Gradely summer school is
+            for students age 5 and above.</span></p>
+        </div>
+        <div>
+          <p>When do the virtual live sessions hold?<span>
+              Each class has scheduled days for the live classes which can be found in the class calendar.
+              Also, if you miss a class, you can watch the recorded version on your class feed and,
+              post on the feed if you have any questions for your facilitator.</span></p>
+        </div>
+      </div>
+      <footer>
+        <div>
+        <img src="../assets/logoMark.png" alt="Gadly logo mark">
+        <ul>
+          <li>Inside Gradely</li>
+          <li>Home</li>
+          <li>About Gradely</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+          <li>Guides &amp; How-tos</li>
+        </ul>
+        <ul>
+          <li>Products</li>
+          <li>For Schools</li>
+          <li>For Parents</li>
+          <li>Tutoring</li>
+          <li>CatchUp!</li>
+          <li>Covid-19</li>
+        </ul>
+        <ul>
+          <li>Account</li>
+          <li>Sign up as a Student</li>
+          <li>Sign up as a Parent</li>
+          <li>Sign ip as a Teacher</li>
+          <li>Sign up as a School</li>
+          <li>Become a Tutor</li>
+        </ul>
+        <ul>
+          <li><span></span>Support</li>
+          <li><span></span>support@gradely.ng</li>
+          <li><span></span>(+234) 810 059 8268</li>
+          <li><span></span>Visit Help center </li>
+          <li><span></span></li>
+
+        </ul>
+      </div>
+      <div>
+        <p>Copyright 2020, Gradely Inc.. All rights reserved.</p>
+        <p>Terms &amp; Conditions</p>
+        <p>Privacy Policies</p>
+      </div>
+      </footer>
+
+
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+
+}
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin: 5px;
+  padding-left: calc(0rem + 8vw);
+}
+
+div.links {
+  display: inline-flex;
+  float: right;
+  padding-right: calc(0rem + 8vw);
+}
+div.links a {
+  margin: 0;
+  padding: 20px;
+  color: ##555555;
+  font-weight: 600;
+  font-size: 13px;
+
+}
+
+div.links a.more {
+  display: flex;
+  margin: 0;
+}
+
+span.material-icons {
+  margin: 0;
+  top: 0;
+  line-height: 0.5;
+  padding: 0;
+}
+
+div.links button.loginButton {
+
+  background-color:#FAA017;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  height: 10%;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  color: #113255;
+
+}
+
+div.flowery-background {
+  background-color: #FCEACF;
+  width: 100%;
+}
+
+div.summer-school{
+
+  background: url('../assets/headerPic.png');
+  object-position: center;
+  object-fit: cover;
+
+}
+
+div.tagline {
+  padding-left: calc(0rem + 8vw);
+  margin: auto 0;
+  max-width: 642px;
+}
+
+div.tagline h1.tagline-header {
+  font-size: 42px;
+  color: #113255;
+  font-weight: 700;
+}
+
+div.tagline h1.tagline-header span {
+  color: #FAA017;
+
+}
+
+
+div.tagline p.tagline-paragraph {
+  font-size: 21px;
+  color: #353535;
+  font-weight: 500;
+
+}
+div.tagline-image {
+  width: 30%;
+  margin: auto 0;
+
+}
+
+button.standard-button {
+  background-color:#FAA017;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 13px 35px;
+  border: none;
+  color: #113255;
+  text-transform: uppercase;
+
+}
+
+div.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.rows{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  /* max-width: 1400.43px; */
+
+
+}
+div.row-image {
+  width: 30%;
+  padding-left: calc(0rem + 4vw);
+
+}
+
+div.row-article {
+  width: 30%;
+  max-width: 521px;
+  padding-left: 200px;
+  margin: auto;
+}
+
+div.row-article h2 {
+  font-size: 32px;
+  color: #113255;
+  font-weight: 700;
+}
+
+div.row-article p {
+  font-size: 18px;
+  color: #353535;
+  font-weight: 500;
+}
+
+div.row-article button {
+  margin-top: 90px;
+}
+
+div.how-it-works {
+  display: block;
+  text-align: center;
+  color: #113255;
+  margin-top: 40px;
+}
+
+div.icons {
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+}
+div.icon-box {
+  margin: auto;
+  max-width: 269px;
+}
+
+div.icon-box h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #113255;
+
+
+}
+
+div.icon-box p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555555;
+}
+
+div.interest-led-classes {
+  display: block;
+  text-align: center;
+  margin: 80px auto;
+  color: #113255;
+}
+
+div.around {
+  padding-left: calc(0rem + 8vw);
+  justify-content: space-around;
+}
+
+div.summerclass {
+  background: #fff;
+  max-width: 374px;
+  padding: 21px;
+  margin:30px auto;
+  border-radius: 8px;
+  font-weight: 600;
+  max-width: 332px;
+  font-size: 24px;
+  color: #113255;
+  box-shadow: 1px -1px 27px -8px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 1px -1px 27px -8px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px -1px 27px -8px rgba(0,0,0,0.3);
+}
+
+div.summerclass h4 {
+  margin: 10px;
+}
+
+div.summerclass p span {
+  color: #113255;
+  font-weight: 700;
+}
+div.summerclass p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 10px;
+  text-align: left;
+  color: #353535;
+}
+div.meet-partners {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 32px;
+  text-align: center;
+  color: #113255;
+
+}
+
+div.partner h3 {
+  margin: 40px 0;
+}
+div.partner h5 {
+  font-size: 21px;
+  color: #2A4F77;
+  margin: 10px 0;
+}
+
+div.partner p {
+  margin: auto;
+  max-width: 240px;
+  font-size: 14px;
+  text-align: center;
+  color: #757575;
+}
+
+div.partner {
+  margin: auto;
+}
+
+div.partner-with-gradely {
+  background-color:#FCEACF;
+  padding-bottom: 100px;
+
+}
+div.tagline {
+    background-color:#FCEACF;
+}
+
+
+div.partner-with-gradely button {
+  padding: 20px 40px;
+}
+div.tagline-images {
+  width: 100%;
+  background-color:#FCEACF;
+  margin: auto 40px;
+
+}
+div.curriculum {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+div.classes {
+  display: flex;
+  width: 60%;
+  margin: auto;
+
+}
+
+div.general-class , div.personalized-class {
+  display: block;
+  margin: 100px 20px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #11BDCF;
+  border-radius: 15px;
+  min-width: 359px;
+  font-size: 16px;
+  color: #555555;
+}
+
+div.general-class p, div.personalized-class p{
+  max-width: 268px;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+}
+
+div.general-class h3, div.personalized-class h3 {
+  text-align: center;
+}
+span.material-icons-outlined {
+  color: #113255;
+  padding-right: 20px;
+
+}
+
+button.white-button, div.white-button {
+  background-color:#FFF;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid #959595;
+  color: #353535;
+  text-transform: uppercase;
+
+}
+
+div.white-button {
+  display: flex;
+  width: 45%;
+  margin: auto;
+}
+
+
+div.offer {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+div.offer p {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+div.offer h2 {
+  padding: 0;
+  margin: 0;
+}
+div.question-box {
+  display: block;
+
+}
+</style>
