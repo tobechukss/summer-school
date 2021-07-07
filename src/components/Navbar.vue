@@ -90,6 +90,7 @@ span.material-icons {
   top: 0;
   line-height: 0.8;
   padding: 0;
+  color: #113255;
 }
 
 div.links button.login-button {
