@@ -216,7 +216,7 @@
       </div>
       <footer>
         <div>
-        <img src="../assets/logoMark.png" alt="Gadly logo mark">
+        <img src="../assets/logoMark.png" alt="Gradly logo mark">
         <ul>
           <li>Inside Gradely</li>
           <li>Home</li>
@@ -630,5 +630,89 @@ div.offer h2 {
 div.question-box {
   display: block;
 
+}
+
+
+
+
+
+
+
+
+
+button.white-button, div.white-button {
+  background-color:#FFF;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid #959595;
+  color: #353535;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+div.white-button {
+  display: flex;
+  width: 45%;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.white-button p {
+  margin: 0;
+}
+
+
+div.offer {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+div.offer p {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+div.offer h2 {
+  padding: 0;
+  margin: 0;
+  color: #113255;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+p.small-font {
+  color: #353535;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+}
+div.offer h2.push-down {
+  padding-top: 20px;
+}
+
+div.question-box {
+  display: block;
+  margin: 50px auto;
+  max-width: 350px;
+}
+
+p.contact-info {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+p.contact-info {
+  color: #FE747D;
 }
 </style>

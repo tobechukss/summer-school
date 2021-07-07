@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <header>
+      <Navbar />
+    </header>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
 
 
@@ -7,13 +10,15 @@
 </template>
 
 <script>
+import Navbar from './components/Navbar.vue'
 import HelloWorld from './components/HelloWorld.vue'
 
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Navbar
   }
 }
 </script>
@@ -38,5 +43,10 @@ html, body {
   overflow-x: none;
 }
 
+header {
+  width: 100%;
+  background-color: #fff;
+
+}
 
 </style>

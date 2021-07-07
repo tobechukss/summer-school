@@ -1,25 +1,13 @@
 <template>
   <div class="summer-school">
-    <nav class="nav-bar">
-      <img class="logo" src="../assets/gradelyLogo.png" alt="Gradely Logo">
-      <div class="links">
-        <a href="#">For Parents</a>
-        <a href="#">For Schools</a>
-        <a href="#" class="more">More<span class="material-icons">arrow_drop_down</span></a>
-        <a href="#">Sign Up</a>
-        <button class="login-button">LOG IN</button>
-        <a class="dropdown"><span class="material-icons-outlined">menu</span></a>
-      </div>
 
-    </nav>
     <div class="header-background">
     <div class="header-pic-img">
       <div class="header-content">
         <div class="header-article">
           <h1 class="tagline-header">Gradely Online<span> Summer</span><br> School</h1>
-          <p class="tagline-paragraph">Help your child develop modern skills by exploring their
-            interests in an engaging project-based virtual class led by
-            dedicated and passionate professionals.</p>
+          <p class="tagline-paragraph">Help your child explore their curiosity in fun project-based
+            virtual class led by dedicated and passionate professionals.</p>
             <button class="standard-button">Enroll</button>
         </div>
         <img src="../assets/waving_child.png">
@@ -31,8 +19,8 @@
     <img src="../assets/activechild.png">
     <div class="second-article">
       <h2>Keep your child active and watch them grow.</h2>
-      <p>Replace mindless videogaming and long boring hours with curiosity and creativity this summer.
-        Engage your children's interests with minimal demand of your time.</p>
+      <p>Replace mindless videogaming and long boring hours with curiosity and creativity
+        this summer. Engage your children's interests  with minimal demand of your time. </p>
         <button class="standard-button">Enroll</button>
     </div>
   </div>
@@ -153,8 +141,8 @@
   <div class="header-content">
     <div class="header-article">
       <h1 class="tagline-header">Partner with Gradely for your summer school</h1>
-      <p class="tagline-paragraph">Bring your summer school to life with Gradely by offering much more without any additional demands on your teachers. Your students’ can explore
-        and engage their interests right at their fingertips from anywhere they are.</p>
+      <p class="tagline-paragraph">Bring your summer school to life with Gradely by offering much more without any additional demands on your teachers. Your students’ can explore and engage their
+        interests right at their fingertips from anywhere they are.</p>
         <button class="standard-button">REQUEST A DEMO</button>
     </div>
     <img src="../assets/sunset.png">
@@ -202,7 +190,7 @@
         <div class="offer">
           <p class="small-font">starting from</p>
           <h2>3000</h2>
-          <p class="small-font">per month</p>
+          <p class="small-font">per class hour</p>
           <div class="white-button"><img src="../assets/whatsappIcon.svg"><p>BOOK A TUTOR</p></div>
       </div>
     </div>
@@ -228,7 +216,7 @@
 
   </div>
   <div class="faqs">
-    <h5>What age group is this meant for?</h5>
+    <h5>When do the virtual live sessions hold?</h5>
     <p>Each class has scheduled days for the live classes which can be found in the class calendar.
     Also, if you miss a class, you can watch the recorded version on your class feed and,
     post on the feed if you have any questions for your facilitator.</p>
@@ -241,42 +229,43 @@
 
 
   <div class="footer-list">
-    <div>
+      <div>
       <img src="../assets/logoMark.png" alt="Gradly logo mark">
     </div>
 
-  <ul>
-    <li class="heading">Inside Gradely</li>
-    <li>Home</li>
-    <li>About Gradely</li>
-    <li>Blog</li>
-    <li>Contact Us</li>
-    <li>Guides &amp; How-tos</li>
-  </ul>
-  <ul>
-    <li class="heading">Products</li>
-    <li>For Schools</li>
-    <li>For Parents</li>
-    <li>Tutoring</li>
-    <li>CatchUp!</li>
-    <li>Covid-19</li>
-  </ul>
-  <ul>
-    <li class="heading">Account</li>
-    <li>Sign up as a Student</li>
-    <li>Sign up as a Parent</li>
-    <li>Sign ip as a Teacher</li>
-    <li>Sign up as a School</li>
-    <li>Become a Tutor</li>
-  </ul>
-  <ul>
-    <li class="heading"><span></span>Support</li>
-    <li><span></span>support@gradely.ng</li>
-    <li><span></span>(+234) 810 059 8268</li>
-    <li><span></span>Visit Help center </li>
-    <li><span></span></li>
+  <div>
+    <p class="heading">Inside Gradely</p>
+    <p>Home</p>
+    <p>About Gradely</p>
+    <p>Blog</p>
+    <p>Contact Us</p>
+    <p>Guides &amp; How-tos</p>
+  </div>
+  <div>
+    <p class="heading">Products</p>
+    <p>For Schools</p>
+    <p>For Parents</p>
+    <p>Tutoring</p>
+    <p>CatchUp!</p>
+    <p>Covid-19</p>
+  </div>
+  <div>
+    <p class="heading">Account</p>
+    <p>Sign up as a Student</p>
+    <p>Sign up as a Parent</p>
+    <p>Sign ip as a Teacher</p>
+    <p>Sign up as a School</p>
+    <p>Become a Tutor</p>
+  </div>
+  <div>
+    <p class="heading"><span></span>Support</p>
+    <p><span></span>support@gradely.ng</p>
+    <p><span></span>(+234) 810 059 8268</p>
+    <p><span></span>Visit Help center </p>
+    <p><span></span></p>
+  </div>
 
-  </ul>
+
 </div>
 <ul class="copyright">
   <li class="gradely-copyright">Copyright 2020, Gradely Inc.. All rights reserved.</li>
@@ -303,63 +292,7 @@ export default {
 div.summer-school {
   width: 100%;
 }
-.nav-bar {
-  width: 100%;
-  height: 60px;
-  background-color: #fff;
-  position: fixed;
 
-}
-.logo {
-  display: inline-block;
-  vertical-align: top;
-  float: left;
-  margin: 5px;
-  padding-left: calc(0rem + 4vw);
-}
-
-div.links {
-  display: inline-flex;
-  float: right;
-  padding-right: calc(0rem + 4vw);
-}
-div.links a {
-  margin: 0;
-  padding: 15px;
-  color: #555555;
-  font-weight: 600;
-  font-size: 13px;
-  cursor: pointer;
-  text-decoration: none;
-  /* position: relative; */
-}
-
-div.links a.more {
-  display: flex;
-  margin: 0;
-}
-
-span.material-icons {
-  margin: 0;
-  top: 0;
-  line-height: 0.8;
-  padding: 0;
-}
-
-div.links button.login-button {
-
-  background-color:#FAA017;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 20px;
-  height: 10%;
-  padding: 10px 20px;
-  margin: 10px;
-  border: none;
-  color: #113255;
-  position: relative;
-
-}
 
 div.header-background {
   width: 100%;
@@ -677,6 +610,7 @@ div.white-button {
   display: flex;
   width: 45%;
   margin: auto;
+  text-align: left;
 }
 
 
@@ -702,6 +636,7 @@ div.offer h2 {
   padding: 0;
   margin: 0;
 }
+
 div.question-box {
   display: block;
 
@@ -730,6 +665,7 @@ div.white-button {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+
 }
 
 div.white-button p {
@@ -839,42 +775,43 @@ div.footer {
 div.footer-list {
   display: flex;
   width: 90%;
+  justify-content: space-between;
   margin: auto;
   justify-content: center;
 
 
 }
 
-div.footer-list ul {
+div.footer-list img {
+  margin-right: 20px;
+}
+div.footer-list p {
   max-width: 400px;
+  color: #F5F5F5;
   margin-right: 40px;
 }
 
 
 
-div.copyright {
-  display: flex;
-  width: 100%;
 
-  float: left;
-}
 
-li.heading {
+p.heading {
   color: #F5F5F5;
   font-weight: 600;
-  opacity: 60%;
+  opacity: 90%;
   padding-bottom: 15px;
 }
 
-div.footer-list ul li {
+/* div.footer-list p {
   list-style: none;
   font-size: 12px;
   font-weight: 300;
   opacity: 80%;
-}
+} */
 
 ul.copyright {
   list-style: none;
+  color: #F5F5F5;
   max-width: 1200px;
   margin: auto 30px;
   margin-top: 30px;
@@ -889,6 +826,7 @@ li.gradely-copyright {
 li.terms {
   float: right;
   margin: 0;
+  margin-right: 10px;
   padding: 0;
 }
 a.dropdown {
@@ -896,18 +834,8 @@ a.dropdown {
   display: none;
 }
 
-@media screen and (max-width:600px) {
-    div.links a, div.links a.more {
-        display: none;
-    }  div.links a.dropdown {
-      display: block;
-      visibility: visible;
-      opacity: 100%;
-      margin: auto 0;
-      padding: 0;
-    } button.login-button {
-      padding: 0;
-      }div.header-content {
+@media screen and (max-width:650px) {
+      div.header-content {
         display: flex;
         flex-direction: column;
 
@@ -960,7 +888,10 @@ a.dropdown {
       display: block;
     } div.partner {
       width: 80%;
-    } div.faqs h5{
+    } div.offer h2 {
+      padding: 0;
+      margin: 0;
+    }div.faqs h5{
       font-size: 10px;
       width: 100%;
     } div.faqs p {
@@ -973,8 +904,8 @@ a.dropdown {
       flex-direction: column;
     } div.footer-list {
       display: block;
-      margin-right: 0;
-      margin: 0;
+      padding-right: 10px;
+
     }
     li.terms {
       text-align: left;
@@ -991,86 +922,6 @@ a.dropdown {
     }
 
 }
-/* @media screen and (min-height: 400px ) {
-    div.links a, div.links a.more {
-        display: none;
-    }  div.links a.dropdown {
-      display: block;
-      visibility: visible;
-      opacity: 100%;
-    } div.header-content {
-        display: flex;
-        flex-direction: column;
-
-    } div.header-article {
-        width: 60%;
-        margin-top: 60px;
-        padding-top: 0;
-
-
-    } div.header-content img {
-      display: none;
-
-      border-radius: 50%;
-
-    }div.header-pic-img{
-      max-height: 100%;
-    }
-    div.second-page {
-        display: block;
-    } div.second-article {
-        width: 80%;
-        margin: auto;
-    } div.second-page img {
-        width: 90%;
-        margin: 0;
-    }
-    div.row {
-        display: block;
-    } div.summerclass {
-      width: 90%;
-      margin: auto;
-      margin-bottom: 20px;
-    } div.classes {
-      display: block;
-    } div.general-class, div.personalized-class {
-      min-height: 200px;
-      width: 100%;
-      margin: auto;
-      margin-bottom: 20px;
-    } div.curriculum h2 {
-      text-align: left;
-      margin: auto;
-      font-size: 30px;
-      max-width: 300px;
-      margin-bottom: 20px;
-      }div.rows {
-      display: block;
-    } div.partner {
-      width: 80%;
-    } div.faqs h5{
-      font-size: 10px;
-      width: 100%;
-    } div.faqs p {
-      font-size: 10px;
-      padding-left: 30px;
-      }div.footer {
-        width: 100%;
-    } div.footer-list  {
-      margin-right: 0;
-      width: 50%;
-    }
-    li.terms {
-      float: none;
-      margin: 0;
-      padding: 0;
-    }div.offer h2 {
-      text-align: center;
-    }div.copyright {
-      width: 50%;
-    } */
-
-/* } */
 
 
 </style>
