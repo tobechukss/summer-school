@@ -2,7 +2,7 @@
   <div class="links">
     <div>
     <a href="#" class="dropdown" @click="isOpen = !isOpen">
-      <span class="material-icons-outlined">menu</span>
+      <i class="fa fa-bars fa-2x"></i>
     </a>
 
     <div class="sub-menus" v-if="isOpen">
@@ -45,6 +45,7 @@ div.sub-menus, div.menu-item, div.links {
   padding: 0;
   margin: 0;
 }
+
 
 div.sub-menus div.menu-item a {
   margin: auto;
