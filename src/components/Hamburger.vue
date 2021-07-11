@@ -48,6 +48,7 @@ div.sub-menus, div.menu-item, div.links {
 
 i.fa {
   z-index: 3;
+  opacity: 100%;
 }
 
 div.sub-menus div.menu-item a {

@@ -162,22 +162,28 @@ div.links button.login-button {
     } div.sub-menus {
       display: block;
       } div.links a.dropdown {
-      display: block;
+      display: unset;
       visibility: visible;
-      opacity: 100%;
+      opacity: 100% !important;
 
-      margin: 0;
+      margin: auto;
       padding: 15px;
       color: #555555;
       font-weight: 600;
       font-size: 13px;
+      display: block;
       cursor: pointer;
       text-decoration: none;
       position: relative;
     }
+
+    a.dropdown {
+      margin: auto;
+    }
      button.login-button {
       padding: 0;
       }
+   
 
 }
 </style>
