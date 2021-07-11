@@ -46,6 +46,9 @@ div.sub-menus, div.menu-item, div.links {
   margin: 0;
 }
 
+i.fa {
+  z-index: 3;
+}
 
 div.sub-menus div.menu-item a {
   margin: auto;
