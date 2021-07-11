@@ -2,8 +2,9 @@
   <div id="app">
     <header>
       <Navbar />
+
     </header>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld />
 
 
   </div>
@@ -11,6 +12,7 @@
 
 <script>
 import Navbar from './components/Navbar.vue'
+
 import HelloWorld from './components/HelloWorld.vue'
 
 
@@ -18,7 +20,8 @@ export default {
   name: 'App',
   components: {
     HelloWorld,
-    Navbar
+    Navbar,
+
   }
 }
 </script>

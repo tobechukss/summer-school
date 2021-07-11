@@ -10,13 +10,14 @@
             virtual class led by dedicated and passionate professionals.</p>
             <button class="standard-button">Enroll</button>
         </div>
-        <img src="../assets/waving_child.png">
+        <img class="sunset-image" src="../assets/waving_child.png">
 
       </div>
     </div>
   </div>
   <div class="second-page">
-    <img src="../assets/activechild.png">
+    <!-- <img src="../assets/activechild.png"> -->
+    <iframe height="315" src="https://www.youtube.com/embed/6NMxADANn8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="second-article">
       <h2>Keep your child active and watch them grow.</h2>
       <p>Replace mindless videogaming and long boring hours with curiosity and creativity
@@ -65,21 +66,21 @@
   <h2>Interest-led classes your children will love!</h2>
   <div class="row">
     <div class="summerclass">
-      <img src="../assets/coding.png" alt="">
+      <img class="summerclasses" src="../assets/coding.png" alt="">
       <h4>Coding</h4>
       <p>During these classes, your child
         will improve their logical thinking, creative thinking, and <span>...read more</span></p>
       <button class="standard-button">Enroll</button>
     </div>
     <div class="summerclass">
-      <img src="../assets/digitalDesign.png" alt="">
+      <img  class="summerclasses" src="../assets/digitalDesign.png" alt="">
       <h4>Digital Design</h4>
       <p>Help your child release their creativity
         while building valuable communication skill for the  <span>...read more</span></p>
       <button class="standard-button">Enroll</button>
     </div>
     <div class="summerclass">
-      <img src="../assets/fineDining.png" alt="Plate of Food">
+      <img  class="summerclasses" src="../assets/fineDining.png" alt="Plate of Food">
       <h4>Homemaking</h4>
       <p>This is for the enthusiastic
         food lovers that would like to engage their 5 senses. At the  <span>...read more</span></p>
@@ -88,25 +89,26 @@
   </div>
   <div class="row">
     <div class="summerclass">
-      <img src="../assets/dance.png" alt="Girls dancing ballet in the sunlight">
+      <img  class="summerclasses" src="../assets/dance.png" alt="Girls dancing ballet in the sunlight">
       <h4>Dance</h4>
       <p>Your active and vibrant child will
         learn fun and enthralling dance styles that will come  <span>...read more</span></p>
-      <button class="standard-button">Enroll</button>
+      <button class="standard-button" @click="$refs.addchildName.openAddchild()">Enroll</button>
     </div>
     <div class="summerclass">
-      <img src="../assets/entrpreneurship.png" alt="">
+      <img  class="summerclasses" src="../assets/entrpreneurship.png" alt="">
       <h4>Entrepreneurship</h4>
       <p>For the creative problem solvers,
         this 5 week course will help your child understand  <span>...read more</span></p>
-      <button class="standard-button">Enroll</button>
+      <button class="standard-button" @click="$refs.connectName.openConnect()">Enroll</button>
     </div>
-    <div class="summerclass">
-      <img src="../assets/videoProduction.png" alt="">
+    <div   class="summerclass">
+      <img class="summerclasses" src="../assets/videoProduction.png" alt="">
       <h4>Video production</h4>
       <p>Your child will learn to produce,
         create, and edit videos they can use for video adverts  <span>...read more</span></p>
-      <button class="standard-button">Enroll</button>
+      <button class="standard-button" @click="$refs.modalName.openModal()">Enroll</button>
+
     </div>
   </div>
 </div>
@@ -138,14 +140,18 @@
 </div>
 <div class="header-background">
 
-  <div class="header-content">
+  <div class="header-content sun">
     <div class="header-article">
       <h1 class="tagline-header">Partner with Gradely for your summer school</h1>
       <p class="tagline-paragraph">Bring your summer school to life with Gradely by offering much more without any additional demands on your teachers. Your students’ can explore and engage their
         interests right at their fingertips from anywhere they are.</p>
-        <button class="standard-button">REQUEST A DEMO</button>
+        <div class="rows">
+        <div class="whites-button"><img src="../assets/whatsappIcon.svg"><p><a href="https://wa.link/ydy5yo">Book a tutor</a></p></div>
+        <div class="whites-button broch"><img src="../assets/cardThumb.png"><p>Download Brochure</p></div>
+      </div>
     </div>
-    <img src="../assets/sunset.png">
+
+    <img class="sunset-image" src="../assets/sunset.png">
 
 
 </div>
@@ -191,7 +197,7 @@
           <p class="small-font">starting from</p>
           <h2>3000</h2>
           <p class="small-font">per class hour</p>
-          <div class="white-button"><img src="../assets/whatsappIcon.svg"><p>BOOK A TUTOR</p></div>
+          <div class="white-button"><img src="../assets/whatsappIcon.svg"><p><a href="https://wa.link/ydy5yo">Book a tutor</a></p></div>
       </div>
     </div>
       </div>
@@ -253,7 +259,7 @@
     <p class="heading">Account</p>
     <p>Sign up as a Student</p>
     <p>Sign up as a Parent</p>
-    <p>Sign ip as a Teacher</p>
+    <p>Sign up as a Teacher</p>
     <p>Sign up as a School</p>
     <p>Become a Tutor</p>
   </div>
@@ -266,6 +272,7 @@
   </div>
 
 
+
 </div>
 <ul class="copyright">
   <li class="gradely-copyright">Copyright 2020, Gradely Inc.. All rights reserved.</li>
@@ -274,25 +281,405 @@
 </ul>
 </div>
 
+<modal ref="modalName">
+
+  <template v-slot:closing>
+      <p @click="$refs.modalName.closeModal()"><span class="material-icons-outlined">
+close
+</span></p>
+  </template>
+
+
+<template v-slot:body>
+  <img src="../assets/success.png">
+  <h2>Success!</h2>
+  <p>Thank you for joining Gradely Online Summer School.
+    We look forward to a fun learnig experience with you.</p>
+
+</template>
+
+
+</modal>
+
+<connect ref="connectName">
+
+  <template v-slot:closing>
+    <h3>ADD A CHILD</h3>
+      <p @click="$refs.connectName.closeConnect()"><span class="material-icons-outlined">
+close
+</span></p>
+  </template>
+
+
+<template v-slot:body>
+  <div class="addyourchild">
+    <div>
+    <img src="../assets/warning.png">
+  </div>
+    <p>Can't find you child?<a href="#"> Sign up your Child</a></p>
+  </div>
+</template>
+
+<template v-slot:inputted>
+  <div class="addstudent">
+    <div class="input-title">
+      <p>Student Code</p>
+      <div>
+        <img src="../assets/info.png">
+      </div>
+    </div>
+    <div class="input-field">
+    <input v-model="message" placeholder="XYZ/2019/2998">
+
+  <button class="standard-button">Verify Code</button>
+</div>
+
+<div class="input-title">
+  <p>Student Code</p>
+</div>
+<div class="input-field">
+<select v-model="selected">
+  <option v-for="option in options" v-bind:key="option.value">
+    {{ option.text }}
+  </option>
+</select>
+
+</div>
+</div>
+
+<div class="profileinfo">
+  <div>
+  <img src="../assets/profilephoto.png">
+</div>
+  <div>
+    <h3>Omolade Giwa</h3>
+    <p>IMMAD College (JSS1 - Gold)</p>
+  </div>
+</div>
+
+<div  class="addanotherchild">
+  <div class="addImage">
+  <a href="#"><img src="../assets/Shape.png"></a>
+</div>
+  <div>
+    <p><a href="#">Add Another Child</a></p>
+  </div>
+</div>
+
+<div class="enroll-button">
+<button class="standard-button">CONNECT</button>
+</div>
+
+</template>
+
+
+
+
+</connect>
+
+<addchild ref="addchildName">
+
+  <template v-slot:closing>
+    <h3>JOIN CLASS FORM</h3>
+      <p @click="$refs.addchildName.closeAddchild()"><span class="material-icons-outlined">
+close
+</span></p>
+  </template>
+
+
+
+  <template v-slot:body>
+    <div class="addyourchild">
+      <div>
+      <img src="../assets/warning.png">
+    </div>
+      <p>Is your child already using Gradly<a href="#"> Enter student code</a></p>
+    </div>
+    <div>
+      <p class="entername">Enter the name of your child and your contact details.
+        We need the your contact information to send the child’s login details. <a href="#">Learn more about how we use the parent’s contact here.</a></p>
+    </div>
+  </template>
+
+  <template v-slot:inputted>
+<div>
+    <div class="input-parent-detail">
+    <div>
+    <h3>Parent's email</h3>
+    <div class="input-field">
+    <input v-model="message" placeholder="E.g David Oshinaga">
+  </div>
+
+  </div>
+
+  <div>
+  <h3>Parent's password</h3>
+  <div class="input-field">
+  <input v-model="message" placeholder="Enter password">
+</div>
+
+
+</div>
+
+
+
+</div>
+<div>
+  <h3>Students</h3>
+  <p class="entername">Copy
+Enter your child’s name and class and select up to three courses they have interest in.</p>
+</div>
+
+</div>
+    <div class="addstudent">
+      <div class="input-child-detail">
+      <div>
+      <h3>Parent's email</h3>
+      <div class="input-field">
+      <input v-model="message" placeholder="E.g David Oshinaga">
+    </div>
+
+    </div>
+
+    <div>
+    <h3>Parent's password</h3>
+    <div class="input-field">
+    <input v-model="message" placeholder="Enter password">
+  </div>
+
+
+
+
+  </div>
+
+  <div>
+  <h3>Parent's password</h3>
+  <div class="input-field">
+  <input v-model="message" placeholder="Enter password">
+</div>
+
+
+
+
+</div>
+</div>
+
+
+  <div class="input-title">
+    <p>Student Code</p>
+  </div>
+  <div class="input-field">
+  <select v-model="selected">
+    <option v-for="option in options" v-bind:key="option.value">
+      {{ option.text }}
+    </option>
+  </select>
+
+  </div>
+  </div>
+
+
+  <div  class="addanotherchild">
+    <div class="addImage">
+    <a href="#"><img src="../assets/Shape.png"></a>
+  </div>
+    <div>
+      <p><a href="#">Add Another Child</a></p>
+    </div>
+  </div>
+
+  <div class="enroll-button">
+  <button class="standard-button">CONNECT</button>
+  </div>
+
+  </template>
+
+
+</addchild>
+
 
   </div>
 
 </template>
 <script>
+import Modal from "./Modal";
+import Connect from "./ConnectModal";
+import Addchild from "./Addchild";
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  components: {
+     Modal,
+     Connect,
+     Addchild
+  }, data() {
+    return {
+        selected: 'A',
+      options: [
+        {text: 'Coding', value: 'A'},
+        {text: 'Digital Design', value: 'B'},
+        {text: 'Homemaking', value: 'C'},
+        {text: 'Dance', value: 'D'},
+        {text: 'Entrepreneurship', value: 'E'},
+        {text: 'Video Production', value: 'F'},
+      ]
+    }
+
   }
 }
 </script>
 
 <style>
+div.addyourchild {
+  width: 90%;
+  color: #113255;
+  background-color: #FCEACF;
+  border: 1px solid #FAA017;
+  display:flex;
+  margin: auto;
+  border-radius: 5px;
+
+}
+
+div.modal__body  p.entername {
+  text-align: left;
+  font-size: 12px;
+}
+div.modal__closing h3, div.modal__closing p {
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+
+}
+
+div.modal__input div.input-field{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+div.modal__input div.input-field input {
+  padding: 10px;
+  border: 1px solid #D5D5D5;
+  border-radius: 5px;
+
+}
+
+div.input-title {
+  display: flex;
+  margin: 10px;
+}
+
+div.modal__input div.input-field select {
+  padding: 10px 190px 10px 10px;
+  width: 90%;
+  border: 1px solid #D5D5D5;
+  border-radius: 5px;
+}
+
+div.input-title p, div.input-title img {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0
+}
+div.input-title img {
+  margin-left: 20px;
+}
+div.modal__input  div.input-field button {
+  margin: auto;
+  background-color:#11BDCF;
+}
+
+div.input-parent-detail {
+  display: flex;
+}
+
+div.input-child-detail {
+  display: flex;
+}
+
+div.input-parent-detail input{
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  width: 250px;
+  padding: 10px;
+}
+
+div.input-child-detail input{
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  width: 150px;
+  padding: 10px;
+}
+div.profileinfo {
+  display: flex;
+  max-height: 20px;
+  padding: 40px 0;
+}
+
+div.profileinfo h3, div.profileinfo p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+
+div.addyourchild img {
+  margin: 20px;
+}
+
+div.addyourchild a {
+  font-weight: 600;
+  color: #113255;
+  letter-spacing: 0.5px;
+}
+
+div.addanotherchild {
+  display: flex;
+}
+
+div.addanotherchild p a{
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FAA017;
+}
+
+div.enroll-button {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+div.enroll-button button.standard-button {
+  margin: auto;
+}
+
+div.addImage {
+  margin: auto 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid #FAA017;
+  border-radius: 50%;
+}
+
 
 div.summer-school {
   width: 100%;
 }
 
+div.sun {
+  padding: 30px 0;
+}
+
+span.material-icons-outlined {
+  cursor: pointer;
+}
 
 div.header-background {
   width: 100%;
@@ -362,12 +749,15 @@ div.second-page {
   display: flex;
   width: 100%;
   background-color: #fff;
+  
 }
 
-div.second-page img {
-  width: 60%;
+div.second-page iframe {
   margin: auto;
-  padding: 0;
+  padding: ;
+  width: 40%;
+  padding: 20px;
+ 
 }
 
 div.second-article {
@@ -408,6 +798,10 @@ div.how-it-works h2 {
   margin-bottom: 40px;
   font-size: 1.8rem;
   font-weight: 700;
+}
+div.how-it-works p {
+  margin: 20px auto;
+  text-align: center;
 }
 
 div.icons {
@@ -468,7 +862,7 @@ div.summerclass {
   -moz-box-shadow: 1px -1px 27px -8px rgba(0,0,0,0.3);
 }
 
-div.summerclass img {
+div.summerclass img.summerclasses {
   margin: 10px;
   width: 80%;
 }
@@ -505,13 +899,15 @@ div.meet-partners h3 {
 }
 
 div.rows {
+  width: 100%;
   display: flex;
   margin: auto;
 
 }
 div.partner {
+  display: inline-block;
   width: 20%;
-  margin: auto;
+  margin: 20px;
 }
 
 div.partner h3 {
@@ -581,7 +977,7 @@ span.material-icons-outlined {
 }
 
 
-button.white-button, div.white-button {
+button.white-button {
   background-color:#FFF;
   font-size: 14px;
   font-weight: 700;
@@ -593,6 +989,37 @@ button.white-button, div.white-button {
 
 
 
+}
+
+div.whites-button {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  padding: 2px 14px;
+  border: 1px solid #959595;
+  border-radius: 25px;
+  max-width: 190px;
+
+
+
+}
+
+div.whites-button a {
+  color: #353535;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+div.broch {
+  margin-left: 10px;
+  border: none;
+}
+
+div.whites-button img {
+  height: 22.98px;
+  width: 22.87px;
+  margin: auto 0;
+  margin-right: 10px;
 }
 
 .standard-button:hover{
@@ -668,8 +1095,10 @@ div.white-button {
 
 }
 
-div.white-button p {
+div.white-button p a {
   margin: 0;
+  color: #353535;
+  text-decoration: none;
 }
 
 div.links button.login-button:hover {
@@ -829,12 +1258,20 @@ li.terms {
   margin-right: 10px;
   padding: 0;
 }
-a.dropdown {
-  visibility: hidden;
-  display: none;
-}
+
 
 @media screen and (max-width:650px) {
+  div.modal__input div.input-field{
+    display: block;
+    margin: 10px;
+  }
+
+  div.modal__input div.input-field input {
+    margin-bottom: 10px;
+  }
+
+
+
       div.header-content {
         display: flex;
         flex-direction: column;
@@ -847,7 +1284,7 @@ a.dropdown {
         padding-top: 0;
 
 
-    } div.header-content img {
+    } div.header-content img.sunset-image {
       width: 80%;
 
       border-radius: 50%;
@@ -857,12 +1294,13 @@ a.dropdown {
     }
     div.second-page {
         display: block;
+        margin: auto 0;
+        padding: 0;
     } div.second-article {
         width: 80%;
-        margin: auto;
-    } div.second-page img {
-        width: 90%;
-        margin: 0;
+        
+    } div.second-page iframe {
+        width: 80%;
     }
     div.row {
         display: block;
